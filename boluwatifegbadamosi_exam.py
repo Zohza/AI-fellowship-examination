@@ -81,14 +81,14 @@ while True:
         if age >= 18 :
             print("You can vote")
             break
-        elif age >= "exit":
+        elif age == "exit":
                 print("You can vote")
         else:
             print("You cannot vote")
     
 
     except Exception as e:
-        print(e,"Invalid input")
+        print("Invalid input")
         
     
     

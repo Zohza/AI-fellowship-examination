@@ -27,7 +27,9 @@ while True:
 
     try:
         choice = int(input("Enter an Operation you would like to perform: "))
-
+        if choice == 5:
+            print("Exciting the program!")
+            break
         num1 = float(input("Enter first number: "))
         num2 =float(input("Enter second number: "))
     except ValueError as e:
@@ -36,8 +38,7 @@ while True:
     except Exception:
         print("Invalid input")
 
-        # if choice == 5:
-        #     break
+        
         if choice ==1:
             print("Result:", add(num1,num2))
         elif choice ==2:
@@ -46,10 +47,7 @@ while True:
             print("Result:", multiply(num1,num2))
         elif choice==4:
             print("Result:", divide(num1,num2))
-        elif choice ==5:
-            print("exiting the program")
-            break
-            
+    
         else:
             print("Invalid Input, choose a number between 1-5")
 
